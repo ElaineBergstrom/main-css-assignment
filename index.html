@@ -4,73 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>dogGO - Dog friendly travel</title>
     <link rel="stylesheet" href="./styles.css" >
 </head>
 <body>
-    <header>
-        <img width="100px" height="50px" >
-        <nav>
-            <a href="#">Page 1</a>
-            <a href="#">Page 2</a>
-            <a href="#">Page 3</a>
+    <header class="center-format-section dark-bkg">
+        <div id="logo">
+            <h1>
+                dogG
+            </h1>
+            <img src="./assets/images/arrows.svg" alt="two arrows forming a circle">
+        </div>       
+        <nav id="navbar">
+            <a href="#">Booking</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
         </nav>
     </header>
-    <section>
-        <article>
-            <h1>
-                This website is awesome.
-            </h1>
+    <section class="center-format-section dark-bkg" >
+        <div id="hero">
+            <article>
+                <h2>
+                    Don't let traveling ruin the adventure!
+                </h2>
+                <p>
+                    We take dog friendly traveling to the next level! Never worry again about the 
+                    complications of traveling with pets. Allow us to help you and your pup have fun
+                    the entire vacation worry free!
+                </p>
+                <button class="button"> 
+                    Sign up
+                </button>
+            </article>
+            <video controls loop>
+                <source src="./assets/videos/Herovideo_720x480.mp4" type="video/mp4">
+                <source src="./assets/videos/Herovideo_720x480.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <section class="center-format-section" id="information">
+        <h3 class="text">
+            Traveling Tips & Tricks!
+        </h3>
+        <div id="info-container">
+            <a href="#" class="link">
+                <div class="img-container">
+                    <img  
+                        src="./assets/images/dog_suitcase.jpeg"
+                        alt="White french bulldog sitting inside suitcase looking upset that you haven't packed any treats"
+                    >
+                </div>                
+                <p class="text">
+                    The do's & don'ts of packing with pets!
+                </p>
+            </a>
+            <a href="#" class="link" >
+                <div class="img-container">
+                    <img 
+                        src="./assets/images/dog_flying.webp" 
+                        alt="Fluffy white pomeranian staring out window of airplane, plotting world domination"
+                    >
+                </div>
+                <p class="text">
+                    Dog friendly flying, which airline should you book?
+                </p>
+            </a>
+            <a href="#" class="link">
+                <div class="img-container">
+                    <img  
+                        src="./assets/images/dog_backpack.jpeg"
+                        alt="Golden retriever puppy sleeping peacefully inside backpack as man hikes across mountain"
+                    >
+                </div>
+                <p class="text">
+                    Dog bags for all activities, which is right for yours?
+                </p>
+            </a>
+            <a href="#" class="link">
+                <div class="img-container">
+                    <img 
+                        src="./assets/images/dog_car.jpeg"
+                        alt="Beagle dog happily looking out car window with tongue out, adding it's own saliva to the ocean below"
+                    >
+                </div>
+                <p class="text">
+                    Need to knows about renting cars with your furry friends!
+                </p>
+            </a>
+        </div>
+    </section>
+    <article class="center-format-section" id="quote">
+        <div class="quote-container">
             <p>
-                This is just a placeholder for some written stuff like lorem ipsum blah blah blah blah. 
-                Blah blah blah blah blah.
+                “Such short little lives our pets have to spend with us, and they spend most of
+                it waiting for us to come home each day. It is amazing how much love and laughter
+                they bring into our lives and even how much closer we become with each other 
+                because of them.” 
             </p>
-            <button> 
+            <p class="author"> 
+                -John Grogan
+            </p>
+        </div>
+    </article>
+    <section class="center-format-section">
+        <div id="annoucement-container">
+            <div class="annoucement-text">
+                <h4>
+                    Don't leave your furry friend behind!
+                </h4>
+                <p>
+                    Sign up and start booking your next dog friendly adveture and recieving
+                    the latest news!
+                </p>
+            </div>
+            <button class="button" id="sign-up">
                 Sign up
             </button>
-        </article>
-        <img>
-    </section>
-    <section>
-        <h2>Some random information</h2>
-        <div>
-            <a href="#">
-                <img width="100" height="100">
-                <p>dkffjwo wofwoifjw awofijwo wafijwoaf wnaowjf</p>
-            </a>
-            <a href="#">
-                <img width="100" height="100">
-                <p>dkffjwo wofwoifjw awofijwo wafijwoaf wnaowjf</p>
-            </a>
-            <a href="#">
-                <img width="100" height="100">
-                <p>dkffjwo wofwoifjw awofijwo wafijwoaf wnaowjf</p>
-            </a>
-            <a href="#">
-                <img width="100" height="100">
-                <p>dkffjwo wofwoifjw awofijwo wafijwoaf wnaowjf</p>
-            </a>
         </div>
     </section>
-    <article>
+    <footer class="center-format-section dark-bkg" id="footer">
         <p>
-            Inspiring quote here. Inspiring quote here. Inspiring quote here.
-            Inspiring quote here. Inspiring quote here. Inspiring quote here.
-            Inspiring quote here. Inspiring quote here. Inspiring quote here.
-                                                        -person
+            Copyright ©
         </p>
-    </article>
-    <section>
-        <div>
-            <h3>
-                Call to action!
-            </h3>
-            <p>Sign up blah blah blah blah</p>
-        </div>
-        <button>Sign up</button>
-    </section>
-    <footer>
-        <p>Copyright ©</p>
     </footer>
 </body>
 </html>
