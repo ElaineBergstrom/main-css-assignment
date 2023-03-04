@@ -12,7 +12,7 @@ body {
 .center-format-section {
     display: flex;
     justify-content: space-between;
-    padding: 0 15% 0 15%;
+    padding: 0 15% 10px 15%;
 }
 
 .dark-bkg {
@@ -31,7 +31,7 @@ body {
 #logo h1 {
     font-size: 24px;
     color: #F9FAF8;
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
 #logo img {
@@ -52,9 +52,16 @@ header.center-format-section {
 }
 
 #navbar a {
+    width: 100%;
+    text-align: center;
     text-decoration: none;
     color: #F9FAF8;
     font-weight: light;
+}
+
+#navbar a:hover {
+    color: #3882F6;
+    font-size: 18px;
 }
 
 /**** Hero Section ****/
@@ -74,6 +81,7 @@ header.center-format-section {
 #hero article h2 {
     font-size: 48px;
     font-weight: bold;
+    margin: 10px 0 5px 0;
     color:#F9FAF8;
 }
 
