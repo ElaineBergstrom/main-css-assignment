@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    background-color: #ffffff;
+    background-color: #E5E7EB;
 }
 
 .center-format-section {
@@ -62,4 +62,86 @@ header.center-format-section {
 #navbar a:hover {
     color: #3882F6;
     font-size: 18px;
+}
+
+/**** Form ****/
+
+.border {
+    border: 3px solid #F9FAF8;
+    border-radius: 10px;
+}
+
+#form-section.border {
+    background-color: #3882F6;
+    margin: 10% 15% 10% 15%;
+    height: 400px;
+    padding: 25px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: #F9FAF8;
+    background-color: #26549e;
+   
+}
+
+.form-header {
+    width: 80%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 80%;
+    padding: 20px;
+    justify-content: space-between;
+}
+.form-input {
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #F9FAF8;
+    background-color: #26549e;
+    color: #F9FAF8;
+    width: 100%;
+}
+
+.form-input::placeholder {
+    font-style: italic;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+button {
+    border-radius: 8px;
+    border: 2px solid #F9FAF8;
+    color: #F9FAF8;
+    background-color: #26549e;
+    font-weight: bold;
+    padding: 5px 20px 5px 20px;
+    margin: 10px;
+}
+
+button:active {
+    border-color: #3882F6;
+    background-color: #F9FAF8;
+    color: #26549e;
+}
+
+/**** Footer ****/
+
+#footer p {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #E5E7EB; 
+    
 }
