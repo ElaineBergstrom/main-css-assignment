@@ -9,12 +9,12 @@
 </head>
 <body>
     <header class="center-format-section dark-bkg">
-        <div id="logo">
+        <picture id="logo">
             <h1>
                 dogG
             </h1>
             <img src="./assets/images/arrows.svg" alt="two arrows forming a circle">
-        </div>       
+        </picture>       
         <nav id="navbar">
             <a href="#">Booking</a>
             <a href="#">About Us</a>
@@ -23,7 +23,7 @@
     </header>
     <main>
         <section class="center-format-section dark-bkg" id="hero">
-            <article>
+            <section class="hero-text-container">
                 <h2>
                     Don't let travel rules ruin the adventure!
                 </h2>
@@ -35,100 +35,94 @@
                 <button class="button"> 
                     Sign up
                 </button>
-            </article>
-            <div class="video-container">
-                <video controls loop>
-                    <source src="./assets/videos/Herovideo_720x480.mp4" type="video/mp4">
-                    <source src="./assets/videos/Herovideo_720x480.webm" type="video/webm">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+            </section>
+            <video autoplay muted loop class="video-container">
+                <source src="./assets/videos/Herovideo_720x480.mp4" type="video/mp4">
+                <source src="./assets/videos/Herovideo_720x480.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
         </section>
         <section class="center-format-section" id="information">
             <h3 class="text">
                 Traveling Tips & Tricks!
             </h3>
             <div id="info-container">
-                <a href="#" class="link">
-                    <div class="img-container">
+                <figure class="post-container">
+                    <picture class="img-container">
                         <img  
                             src="./assets/images/dog_suitcase.jpeg"
                             alt="White french bulldog sitting inside suitcase looking upset that you haven't packed any treats"
                         >
-                    </div>                
-                    <p class="text">
+                    </picture>
+                    <figcaption class="text">
                         The do's & don'ts of packing with pets!
-                    </p>
-                </a>
-                <a href="#" class="link" >
-                    <div class="img-container">
+                    </figcaption>
+                </figure>                
+                <figure class="post-container">
+                    <picture class="img-container" >
                         <img 
                             src="./assets/images/dog_flying.webp" 
                             alt="Fluffy white pomeranian staring out window of airplane, plotting world domination"
                         >
-                    </div>
-                    <p class="text">
+                    </picture>
+                    <figcaption class="text">
                         Dog friendly flying, which airline should you book?
-                    </p>
-                </a>
-                <a href="#" class="link">
-                    <div class="img-container">
+                    </figcaption>
+                </figure>                   
+                <figure class="post-container">
+                    <picture class="img-container">
                         <img  
                             src="./assets/images/dog_backpack.jpeg"
                             alt="Golden retriever puppy sleeping peacefully inside backpack as man hikes across mountain"
                         >
-                    </div>
-                    <p class="text">
+                    </picture>
+                    <figcaption class="text">
                         Dog bags for all activities, which is right for yours?
-                    </p>
-                </a>
-                <a href="#" class="link">
-                    <div class="img-container">
+                    </figcaption>
+                </figure>
+                <figure class="post-container">
+                    <picture class="img-container">
                         <img 
                             src="./assets/images/dog_car.jpeg"
                             alt="Beagle dog happily looking out car window with tongue out, adding it's own saliva to the ocean below"
                         >
-                    </div>
-                    <p class="text">
+                    </picture>
+                    <figcaption class="text">
                         Need to knows about renting cars with your furry friends!
-                    </p>
-                </a>
+                    </figcaption>
+                </figure>                
             </div>
         </section>
-        <article class="center-format-section" id="quote">
-            <div class="quote-container">
+        <section class="center-format-section" id="quote">
+            <blockquote>
+                Such short little lives our pets have to spend with us, and they spend most of
+                it waiting for us to come home each day. It is amazing how much love and laughter
+                they bring into our lives and even how much closer we become with each other 
+                because of them.
+            </blockquote>
+            <span class="author">
+                -John Grogan
+            </span>
+        </section>
+        <section class="center-format-section" id="annoucement-container">
+            <section class="text-container">
+                <h4>
+                    Don't leave your furry friend behind!
+                </h4>
                 <p>
-                    “Such short little lives our pets have to spend with us, and they spend most of
-                    it waiting for us to come home each day. It is amazing how much love and laughter
-                    they bring into our lives and even how much closer we become with each other 
-                    because of them.” 
+                    Sign up and start booking your next dog friendly adveture and recieving
+                    the latest news!
                 </p>
-                <p class="author"> 
-                    -John Grogan
-                </p>
-            </div>
-        </article>
-        <section class="center-format-section">
-            <div id="annoucement-container">
-                <div class="annoucement-text">
-                    <h4>
-                        Don't leave your furry friend behind!
-                    </h4>
-                    <p>
-                        Sign up and start booking your next dog friendly adveture and recieving
-                        the latest news!
-                    </p>
-                </div>
-                <button class="button" id="sign-up">
-                    Sign up
-                </button>
-            </div>
+            </section>
+            <button class="button" id="sign-up">
+                Sign up
+            </button>
         </section>
     </main>
     <footer class="center-format-section dark-bkg" id="footer">
-        <p>
+        <a href="#">
             Copyright ©
-        </p>
+        </a>
     </footer>
 </body>
 </html>

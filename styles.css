@@ -77,19 +77,19 @@ header.center-format-section {
     padding: 5% 15% 5% 15%;
 }
 
-#hero article {
+.hero-text-container {
     flex: 1;
     padding-right: 25px;
 }
 
-#hero article h2 {
+.hero-text-container h2 {
     font-size: 48px;
     font-weight: bold;
     margin: 10px 0 5px 0;
     color:#F9FAF8;
 }
 
-#hero article p {
+.hero-text-container p {
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -127,12 +127,14 @@ header.center-format-section {
 #information {
     flex-direction: column;
     align-items: center;
-    padding-bottom: 5%;
+    margin: 2% 0 2% 0;
+    padding: 0 15% 0 15%;
 }
 
-#information h3.text {
+h3.text {
     font-size: 36px;
     font-weight: bold;
+    margin: 0;
 }
 
 #info-container {
@@ -140,20 +142,10 @@ header.center-format-section {
     flex-direction: row;
 }
 
-.text {
-    color: #1f2937;
-    text-align: center;
-    font-size: 14px;
-    padding: 0 20px 0 20px;
-}
-
-.link {
+.post-container {
     display: flex;
-    flex: 1;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-decoration: none;
 }
 
 .img-container {
@@ -164,72 +156,74 @@ header.center-format-section {
     overflow: hidden;
 }
 
-.link img {
-    width: auto;
+.img-container img {
+    width: 100%;
     height: 100%;
 }
 
-.link .text {
-    height: 80px;
-    margin: 5px 0 0 0;
+figcaption.text {
+    color: #1f2937;
+    text-align: justify;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 /**** Quote Section ****/
 
 #quote {
     flex-direction: column;
-    background-color: #E5E7EB;
-   
+    padding: 3% 15% 2% 15%;
+    background-color: #E5E7EB;  
 }
 
-#quote .quote-container {
-    padding: 5% 0 5% 0;
-}
-
-#quote p {
+blockquote {
     font-size: 26px;
     font-style: italic;
     font-weight: lighter;
-    color: #1F2937
+    color: #1F2937;
+    margin: 0;
 }
 
 #quote .author {
     text-align: right;
     font-weight: bold;
+    width: 100%;
+    margin: 0;
 }
 
 /*** Annoucement Section ****/
 
 #annoucement-container {
     display: flex;
-    width: 100%;
-    height: 80px;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-radius: 8px;
     background-color: #3882F6;
-    margin: 10% 0 10% 0;
-    padding: 0 15% 0 
-}
-
-.annoucement-text {
+    margin: 5% 15% 5% 15%;
+    padding: 4%;
     color: #E5E7EB; 
 }
 
-.annoucement-text h4 {
+.text-container {
+    flex: 4;
+}
+
+.text-container h4 {
     font-size: 18px;
     margin: 0;
 }
 
-.annoucement-text p {
-    margin: 5px 0 0 0;
+.text-container p {
     font-weight: lighter;
     font-size: 14px;
 }
 
 #sign-up {
+    flex: 1;
     color: #E5E7EB; 
+    padding: 0;
+    padding: 10px 0 10px 0;
     border: 2px solid #E5E7EB;
     background-color: #3882F6;
 }
