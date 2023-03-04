@@ -4,19 +4,17 @@
     font-family: "Roboto", Arial, Helvetica, sans-serif;   
 }
 
-body {
+#body {
     margin: 0;
+    align-items: center;
     background-color: #ffffff;
+  
 }
 
 .center-format-section {
     display: flex;
     justify-content: space-between;
-    padding: 0 15% 10px 15%;
-}
-
-main.center-format-section {
-    flex-direction: co;
+    padding: 0 15% 0 15%;
 }
 
 .dark-bkg {
@@ -25,50 +23,58 @@ main.center-format-section {
 
 /**** Header & Navbar ****/
 
-#logo {
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    padding: 1% 15% 1% 15%;
+    
+}
+
+.logo {
     display: flex;
     flex: 2;
     flex-direction: row;
     align-items: center;
 }
 
-#logo h1 {
+.logo h1 {
     font-size: 24px;
     color: #F9FAF8;
     margin: 0;
 }
 
-#logo img {
-    padding-left: 2px;
+.logo img {
+    margin-left: 2px;
     width: 25px;
     height: 25px;
 }
 
-header.center-format-section {
-    padding-top: 2%;
-}
-
-#navbar {
+.navbar {
     display: flex;
     flex: 1;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-#navbar a {
-    width: 100%;
+.navbar a {
     text-align: center;
     text-decoration: none;
     color: #F9FAF8;
     font-weight: light;
 }
 
-#navbar a:hover {
+.navbar a:hover {
     color: #3882F6;
     font-size: 18px;
 }
 
 /**** Hero Section ****/
+
+main.center-format-section {
+    flex-direction: column;
+    margin-top: 100px;
+}
 
 #hero {
     display: flex;
@@ -82,30 +88,23 @@ header.center-format-section {
     padding-right: 25px;
 }
 
-.hero-text-container h2 {
+.hero-text h2 {
     font-size: 48px;
     font-weight: bold;
     margin: 10px 0 5px 0;
     color:#F9FAF8;
 }
 
-.hero-text-container p {
+.hero-text p {
     font-size: 18px;
     color: #E5E7EB;
 }
 
 .video-container {
     flex: 1;
-    width: 100px;
+    width: 50%;
     height: auto;
-    border: 2px solid #E5E7EB;
     border-radius: 10px;
-    overflow: hidden;
-}
-
-.video-container video {
-    width: 100%;
-    height: 100%;
 }
 
 .button {
@@ -140,6 +139,7 @@ h3.text {
 #info-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .post-container {
@@ -162,6 +162,7 @@ h3.text {
 }
 
 figcaption.text {
+    width: 150px;
     color: #1f2937;
     text-align: justify;
     font-size: 14px;
@@ -222,8 +223,8 @@ blockquote {
 #sign-up {
     flex: 1;
     color: #E5E7EB; 
-    padding: 0;
     padding: 10px 0 10px 0;
+    margin-left: 10px;
     border: 2px solid #E5E7EB;
     background-color: #3882F6;
 }
@@ -234,12 +235,110 @@ blockquote {
 }
 
 /**** Footer ****/
+#footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
 
-#footer p {
+#footer a {
     width: 100%;
     text-align: center;
     font-size: 14px;
+    text-decoration: none;
     color: #E5E7EB; 
-    
 }
 
+/**** MEDIA QUERIES ****/
+
+@media only screen and (max-width: 900px) {
+
+    #header, #information {
+        padding: 1% 10% 1% 10%;
+    }
+
+
+    #hero {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 5% 10% 5% 10%;
+    }
+
+    .hero-text h2 {
+        font-size: 36px;
+    }
+
+    .video-container {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    #info-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .post-container {
+        width: 30%;
+    }
+
+    .img-container {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        border: 3px solid #3882F6;
+        overflow: hidden;
+    }
+
+    figcaption.text {
+        width: 200px;
+    }
+}
+
+  @media only screen and (max-width: 420px) {
+
+    #header {
+        padding: 5% 10% 5% 10%;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+    
+    .navbar a:hover {
+        color: #3882F6;
+        font-size: 14px;
+    }
+
+    #hero {
+        justify-content: center;
+    }
+    
+    #quote {
+        padding: 5% 10% 5% 10%;
+    }
+
+    blockquote, .author {
+        font-size: 18px;
+    }
+
+    #annoucement-container {
+        flex-direction: column;
+        margin: 10%;
+    }
+
+    .text-container {
+        text-align: center;
+    }
+
+    #sign-up {
+        margin-left: 0;
+        padding: 5px 10px 5px 10px;
+    }
+    
+  }

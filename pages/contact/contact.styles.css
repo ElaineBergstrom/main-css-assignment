@@ -3,14 +3,17 @@
     font-family: "Roboto", Arial, Helvetica, sans-serif;   
 }
 
-body {
+#body {
     margin: 0;
     background-color: #E5E7EB;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .center-format-section {
-    display: flex;
-    justify-content: space-between;
     padding: 0 15% 10px 15%;
 }
 
@@ -20,51 +23,83 @@ body {
 
 /**** Header & Navbar ****/
 
-#logo {
+.link {
     display: flex;
     flex: 2;
+}
+
+.logo {
     flex-direction: row;
     align-items: center;
     text-decoration: none;
 }
 
-#logo h1 {
+.logo h1 {
     font-size: 24px;
     color: #F9FAF8;
     margin: 0;
 }
 
-#logo img {
+.logo img {
     padding-left: 2px;
     width: 25px;
     height: 25px;
 }
 
-header.center-format-section {
-    padding-top: 2%;
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    padding: 1% 15% 1% 15%;
+    display: flex;
+    flex-direction: row;
+    
 }
 
-#navbar {
+.logo {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #F9FAF8;
+    margin: 0;
+}
+
+.logo img {
+    margin-left: 2px;
+    width: 25px;
+    height: 25px;
+}
+
+.navbar {
     display: flex;
     flex: 1;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-#navbar a {
-    width: 100%;
+.navbar a {
     text-align: center;
     text-decoration: none;
     color: #F9FAF8;
     font-weight: light;
 }
 
-#navbar a:hover {
+.navbar a:hover {
     color: #3882F6;
     font-size: 18px;
 }
 
 /**** Form ****/
+
+main.border{
+    flex-direction: column;
+    margin-top: 100px;
+}
 
 .border {
     border: 3px solid #F9FAF8;
@@ -138,10 +173,64 @@ button:active {
 
 /**** Footer ****/
 
-#footer p {
+#footer {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer a {
     width: 100%;
     text-align: center;
     font-size: 14px;
+    text-decoration: none;
     color: #E5E7EB; 
-    
+    margin: 0;
+}
+
+/**** Media Queries ****/
+
+@media only screen and (max-width: 900px) {
+
+    #header, #information {
+        padding: 1% 10% 1% 10%;
+    }
+
+    .logo {
+        flex: 1;
+    }
+    .navbar {
+        flex: 2;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    #header {
+        padding: 5% 10% 5% 10%;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .form-header h2 {
+        font-size: 18px;
+    }
+
+    .form-header p {
+        font-size: 14px;
+    }
+
+    .form-input::placeholder {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;;
+        color: rgba(255, 255, 255, 0.7)
+    }
+
+    .border {
+        border: 2px solid #F9FAF8;
+    }
 }
